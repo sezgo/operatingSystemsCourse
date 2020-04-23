@@ -1,6 +1,4 @@
-package os.exercise;
-
-import java.util.Arrays;
+package os.exercise.basicThreadExercises;
 
 public class UseJoin {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package os.exercise;
+package os.exercise.basicThreadExercises;
 
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
