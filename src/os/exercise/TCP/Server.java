@@ -46,6 +46,6 @@ public class Server extends Thread{
         //here the entire main thread gets blocked because of the server.accept()
         //can solve it by making the server class a thread
         Server server = new Server(9876);
-        server.start();
+        server.listen();
     }
 }

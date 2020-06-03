@@ -1,8 +1,6 @@
 package os.exercise.Election;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.util.Scanner;
@@ -37,6 +35,9 @@ public class Client extends Thread{
 
             String resuts = inputStream.readUTF();
             System.out.println(resuts);
+            File file = new File("votes.txt");
+            RandomAccessFile raf = new RandomAccessFile(new File("./test.txt"), "rw");
+
 
 
         }catch (IOException e) {
