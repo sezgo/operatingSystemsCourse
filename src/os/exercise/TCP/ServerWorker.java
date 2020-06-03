@@ -17,6 +17,7 @@ public class ServerWorker extends Thread{
     @Override
     public void run() {
         try {
+            System.out.println("server worker running");
             String messageFromClient = dataInputStream.readUTF();
             System.out.println("Received message from client: " + messageFromClient);
             dataOutputStream.writeUTF("Hello, I am the server");
